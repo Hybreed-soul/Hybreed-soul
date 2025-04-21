@@ -1,0 +1,280 @@
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    translate(0);
+  }
+}
+
+.feature {
+  /* existing styles */
+  animation: slideIn 0.8 ease forwards;
+}
+
+
+
+* {
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+body {
+    background-color: #121212; /* deep dark stage */
+    color: #f0f0f0; /* soft white text */
+    font-family: 'Segoe UI', sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+nav {
+  background-color: #1e1e1e;
+  padding: 1rem;
+}
+
+.nav li a {
+  color: #f8f8f8;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  display: inline-block;
+  transition: color 0.3s ease;
+}
+
+.nav li a:hover {
+  color: #ff4081; /* soft neon pink */
+  text-shadow: 0 0 8px #ff4081;
+}
+
+
+.center-box {
+  background-color: #272727;
+  margin: 30px auto;
+  width: 300px;
+  height: 180px;
+  border-radius: 12px;
+  text-align: center;
+  color: #ffeaa7;
+  border: 1px solid #444;
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1);
+  padding: 75px 20px;
+  font-size: 1.2rem;
+}
+
+footer {
+  margin-top: 50px;
+  padding: 20px;
+  background: #222;
+  color: white;
+  text-align: center;
+}
+
+footer a {
+  color: skyblue;
+  text-decoration: none;
+}
+
+.features {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.feature {
+  background-color: #222;
+  color: white ;
+  padding: 30px;
+  border-radius: 12px;
+  width: 250px;
+  text-align: center;
+  margin: 10px;
+  transition: transform 0.3s ease;
+}
+
+.feature:hover {
+  transform: scale(1.05);
+  background-color: #333;
+}
+
+body {
+  background-color: #121212;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@media (max-width: 600px) {
+  .nav {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    nav {
+      background-color: #111;
+      animation: slideDown 0.8s ease forwards;
+      opacity: 0;
+      animation-delay: 0.3s;
+    }
+    
+    .nav li a:hover {
+      color: #ff4081;
+      text-shadow: 0 0 8px #ff4081;
+    }
+    
+  }
+
+  .features {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .center-box {
+    width: 90%;
+  }
+
+  .center-box:hover {
+    animation: pulse 0.6 ease-in-out;
+  }
+}
+
+.feature:nth-child(1) {
+  animation-delay: 0.2s;
+}
+
+.feature:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+.feature:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.03);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+h1, p {
+  animation: fadeIn 1s ease forwards;
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+h1 {
+  animation-delay: 0.5s;
+}
+
+p {
+  animation-delay: 0.8s;
+}
+
+@keyframes slideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.feature {
+  background-color: #1e1e1e;
+  color: #fafafa;
+  border: 1px solid #333;
+  border-radius: 10px;
+  padding: 1rem;
+  margin: 1rem;
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.05);
+}
+
+footer {
+  background-color: #111;
+  color: #ccc;
+  text-align: center;
+  padding: 1rem;
+}
+footer a {
+  color: #ff4081;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: #eee;
+}
+
+input, textarea {
+  padding: 10px;
+  background-color: #222;
+  border: 1px solid #444;
+  color: #f0f0f0;
+  border-radius: 6px;
+}
+
+button {
+  padding: 10px 15px;
+  background-color: #ff4081;
+  border: none;
+  color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #e73370;
+}
+
+section {
+  opacity : 0;
+  transform: translateY(40px);
+  transition: all 0.6 ease-out;
+}
+
+section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media screen and (max-width: 768px) {
+  .center-box, .feature {
+    width: 90%;
+    font-size: 1rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  iframe {
+    height: 200px;
+  }
+
+  body {
+    font-size: 16px;
+  }
+}
