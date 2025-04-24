@@ -21,11 +21,11 @@
         <div class="hamburger" onclick="toggleMenu()">
           &#9776;
         </div>
-        <ul class="nav-links">
+        <ul class="nav-links" id="navLinks">
           <li><a href="index.html" class="active">Home</a></li>
           <li><a href="about.html">About</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#motto">Motto</a></li>
+          <li><a href="focus">Focus</a></li>
         </ul>
       </nav>
     </header>
@@ -38,7 +38,7 @@
 
       <main>
         <div class="content-box">
-          <section>
+          <section id="motto">
             <h2>
               My Motto
             </h2>
@@ -47,7 +47,7 @@
             </p>
           </section>
 
-          <section>
+          <section id="focus">
             <h2>
               Focus
             </h2>
@@ -55,6 +55,26 @@
               Unleashing my passion relentlessly, watch me unfold!
             </p>
           </section>
+
+          <section id="projects">
+            <h2>My Projects</h2>
+            <div class="projects-grid">
+              <div class="project-card">
+                <h3>Solo Groove 1</h3>
+                <p>Quick drum fill + solo practice breakdown.</p>
+              </div>
+              <div class="project-card">
+                <h3>Gosple Collab</h3>
+                <p>Live session with Gosple folks</p>
+              </div>
+              <div class="project-card">
+                <h3>Lesson Series</h3>
+                <p>Beginner to advanced groove control techniques.</p>
+              </div>
+            </div>
+          </section>
+
+
         </div>
 
         <div class="performance">
@@ -75,10 +95,17 @@
       
       <script>
         function toggleMenu() {
-          const navLinks = document.querySelector('.nav-links');
+          const navLinks = document.getElementById('navLinks');
           navLinks.classList.toggle('active');
         }
+      
+        // Optional: close menu after link click (mobile)
+        document.querySelectorAll('.nav-links a').forEach(link => {
+          link.addEventListener('click', () => {
+            document.getElementById('navLinks').classList.remove('active');
+          });
+        });
       </script>
-
+      
   </body>
 </html>
