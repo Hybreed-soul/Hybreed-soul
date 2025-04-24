@@ -1,7 +1,7 @@
 
       body {
-        font-family: Arial, sans-serif;
-        background-color:#111;
+        font-family: 'Quicksand', sans-serif;
+        background-color:#1a1a1a;
         color: #f4f4f4;
         margin: 0;
         padding: 0;
@@ -38,4 +38,19 @@
         box-shadow: 0 0 10px rgba(0,0,0,0.7);
         max-width: 800px;
         margin: 0 auto;
+      }
+
+      button {
+        padding: 10px 20px;
+        background-color: #e91e63;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+
+      button:hover {
+        background-color: #ad1457;
       }
