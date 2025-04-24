@@ -18,6 +18,9 @@
     <header>
       <nav class="navbar">
         <h1 class="logo">Hybreed</h1>
+        <div class="hamburger" onclick="toggleMenu()">
+          &#9776;
+        </div>
         <ul class="nav-links">
           <li><a href="index.html" class="active">Home</a></li>
           <li><a href="about.html">About</a></li>
@@ -27,11 +30,11 @@
       </nav>
     </header>
 
-    <header>
+    <section>
     <h1>
       Welcome to Hybreed's Universe!
     </h1>
-    </header>
+    </section>
 
       <main>
         <div class="content-box">
@@ -69,6 +72,13 @@
           &#169; 2025 Hybreed. All rights reserved.
         </p>
       </footer>
-   
+      
+      <script>
+        function toggleMenu() {
+          const navLinks = document.querySelector('.nav-links');
+          navLinks.classList.toggle('active');
+        }
+      </script>
+
   </body>
 </html>

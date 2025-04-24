@@ -38,16 +38,6 @@
         border-bottom: 2px solid #1DB954;
       }
 
-      /* Responsive Touch */
-      @media (max-width: 768px) {
-        .nav-links {
-          flex-direction: column;
-          gap: 10px;
-          background: #222;
-          padding: 10px;
-        }
-      }
-
       nav a { 
         color: #f4f4f4;
         text-decoration: none;
@@ -73,6 +63,35 @@
         box-shadow: 0 0 10px rgba(0,0,0,0.7);
         max-width: 800px;
         margin: 0 auto;
+      }
+
+      .hamburger {
+        display: none;
+        font-size: 28px;
+        color: #fff;
+        cursor: pointer;
+      }
+
+      /* Mobile adjustments */
+      @media (max-width: 768px) {
+        .hamburger {
+          display: block;
+        }
+
+        .nav-links {
+          display: none;
+          flex-direction: column;
+          background-color: #111;
+          position: absolute;
+          top: 70px;
+          right: 0;
+          width: 100%;
+          padding: 20px;
+        }
+
+        .nav-links.active {
+          display: flex;
+        }
       }
 
       @media (max-width: 480px) {
