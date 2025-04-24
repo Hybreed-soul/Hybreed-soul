@@ -13,6 +13,41 @@
         padding: 1rem;
       }
     
+      /* navbar base */
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #111;
+        padding: 20px;
+      }
+
+      .nav-links {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+      }
+
+      .nav-links li a:hover {
+        color: #1DB954;
+      }
+
+      /* Active link highlight */
+      .nav-links li .active {
+        color: #fff;
+        border-bottom: 2px solid #1DB954;
+      }
+
+      /* Responsive Touch */
+      @media (max-width: 768px) {
+        .nav-links {
+          flex-direction: column;
+          gap: 10px;
+          background: #222;
+          padding: 10px;
+        }
+      }
+
       nav a { 
         color: #f4f4f4;
         text-decoration: none;
@@ -50,7 +85,7 @@
           margin: 10px 0;
         }
       }
-      
+
       button {
         padding: 12px 24px;
         background-color: #e91e63;
