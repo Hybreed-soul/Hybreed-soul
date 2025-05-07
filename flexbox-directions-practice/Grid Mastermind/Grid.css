@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+.grid-areas {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  grid-template-areas:
+    "navbar content"
+    "footer footer";
+    gap: 10px;
+    height: 100vh;
+}
+
+.navbar {
+  grid-area: navbar;
+  background-color: aqua;
+  padding: 20px;
+}
+
+.content {
+  grid-area: content;
+  background-color: blueviolet;
+  color: white;
+  padding: 20px;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: saddlebrown;
+  color: white;
+  padding: 20px;
+}

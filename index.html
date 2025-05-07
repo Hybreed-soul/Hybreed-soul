@@ -1,111 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Hybreed Soul's Drumming Portfolio - Videos, Lessons, and Contact Info.">
-    <meta name="keywords" content="drumming, music, drum lessons, drum solo, Hybreed soul, Portfolio">
-    <meta name="author" content="Hybreed Soul">
-    <title>Hybreed's Drumming Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="icon" type="image/png" href="favicon.ico.png">
-  </head>
-  <body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Hybreed Soul's Drumming Portfolio - Videos, Lessons, and Contact Info.">
+  <meta name="keywords" content="drumming, music, drum lessons, drum solo, Hybreed soul, Portfolio">
+  <meta name="author" content="Hybreed Soul">
+  <title>Hybreed's Drumming Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/png" href="favicon.ico.png">
+</head>
 
-    <header>
-      <nav class="navbar">
-        <h1 class="logo">Hybreed</h1>
-        <div class="hamburger" onclick="toggleMenu()">
-          &#9776;
-        </div>
-        <ul class="nav-links" id="navLinks">
-          <li><a href="index.html" class="active">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="#motto">Motto</a></li>
-          <li><a href="focus">Focus</a></li>
-        </ul>
-      </nav>
-    </header>
+<body>
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">Hybreed</h1>
+      <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#welcome" class="active">Mansion</a></li>
+        <li><a href="#motto">Motto</a></li>
+        <li><a href="#focus">Focus</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <section>
-    <h1>
-      Welcome to Hybreed's Universe!
-    </h1>
+  <main>
+    <section id="welcome">
+      <h1>Welcome to Hybreed's Universe!</h1>
     </section>
 
-      <main>
-        <div class="content-box">
-          <section id="motto">
-            <h2>
-              My Motto
-            </h2>
-            <p>
-             Soul, Rhythm, Music, Code. That's the Code! 
-            </p>
-          </section>
+    <section id="motto">
+      <h2>My Motto</h2>
+      <p>Soul, Rhythm, Music, Code. That's the Code!</p>
+    </section>
 
-          <section id="focus">
-            <h2>
-              Focus
-            </h2>
-            <p>
-              Unleashing my passion relentlessly, watch me unfold!
-            </p>
-          </section>
+    <section id="focus">
+      <h2>Focus</h2>
+      <p>Unleashing my passion relentlessly, watch me unfold!</p>
+    </section>
 
-          <section id="projects">
-            <h2>My Projects</h2>
-            <div class="projects-grid">
-              <div class="project-card">
-                <h3>Solo Groove 1</h3>
-                <p>Quick drum fill + solo practice breakdown.</p>
-              </div>
-              <div class="project-card">
-                <h3>Gosple Collab</h3>
-                <p>Live session with Gosple folks</p>
-              </div>
-              <div class="project-card">
-                <h3>Lesson Series</h3>
-                <p>Beginner to advanced groove control techniques.</p>
-              </div>
-            </div>
-          </section>
+    <section id="projects">
+      <h2>My Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <h3>Solo Groove 1</h3>
+          <p>Quick drum fill + solo practice breakdown.</p>
+        </div>
+        <div class="project-card">
+          <h3>Gospel Collab</h3>
+          <p>Live session with Gospel folks.</p>
+        </div>
+        <div class="project-card">
+          <h3>Lesson Series</h3>
+          <p>Beginner to advanced groove control techniques.</p>
+        </div>
+      </div>
+    </section>
 
+    <section id="showcase">
+      <h2>Live Video Showcase</h2>
+      <p>Some of my most intense grooves, solos, and collabs. Watch, feel the Rhythm.</p>
 
+      <div class="video-grid">
+        <div class="video-card">
+          <video controls>
+            <source src="drum-videos/InShot_20250424_182606270.mp4" type="video/mp4" />
+            </video>
+          <h3>Intro Headlines</h3>
+          <p>Start-up flex</p>
         </div>
 
-        <div class="performance">
-          <div class="box">Video 1</div>
-          <div class="box">Video 2</div>
-          <div class="box">Video 3</div>
-          <div class="box">Video 4</div>
+        <div class="video-card">
+          <video controls>
+            <source src="drum-videos/2925e3127708832c7748e759e3feee7d.mp4" type="video/mp4">
+          </video>
+            <h3>Live church Performance</h3>
+            <p>Breakdown in videos section</p>
+          </div>
+          
+        <div class="video-card">
+          <video controls>
+          <source src="drum-videos/InShot_20250302_181958085.mp4" type="video/mp4" />
+          </video>
+          <h3>Speed & Power Drill</h3>
         </div>
+      </div>
+    </section>
 
-      </main>
+    <section class="performance">
+      <div class="box">Video 1</div>
+      <div class="box">Video 2</div>
+      <div class="box">Video 3</div>
+      <div class="box">Video 4</div>
+    </section>
 
+    <section id="contact">
       <button>Contact Me</button>
-      <footer>
-        <p>
-          &#169; 2025 Hybreed. All rights reserved.
-        </p>
-      </footer>
-      
-      <script>
-        function toggleMenu() {
-          const navLinks = document.getElementById('navLinks');
-          navLinks.classList.toggle('active');
+    </section>
+  </main>
+
+  <footer>
+    <p>&#169; 2025 Hybreed. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const navLinks = document.getElementById('navLinks');
+      navLinks.classList.toggle('active');
+    }
+
+    // Close menu on link click (mobile)
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        document.getElementById('navLinks').classList.remove('active');
+      });
+    });
+
+    // ScrollSpy
+    const sections = document.querySelectorAll("section[id]");
+    const navItems = document.querySelectorAll(".nav-links a");
+
+    window.addEventListener("scroll", () => {
+      let current = "";
+
+      sections.forEach(section => {
+        const top = section.offsetTop - 100;
+        const height = section.offsetHeight;
+        if (pageYOffset >= top && pageYOffset < top + height) {
+          current = section.getAttribute("id");
         }
-      
-        // Optional: close menu after link click (mobile)
-        document.querySelectorAll('.nav-links a').forEach(link => {
-          link.addEventListener('click', () => {
-            document.getElementById('navLinks').classList.remove('active');
-          });
-        });
-      </script>
-      
-  </body>
+      });
+
+      navItems.forEach(link => {
+        link.classList.remove("active");
+        if (link.getAttribute("href").includes(current)) {
+          link.classList.add("active");
+        }
+      });
+    });
+  </script>
+
+<script>
+  document.querySelectorAll('.video-card').forEach(card => {
+    const video = card.querySelector('.custom-video');
+    const playBtn = card.querySelector('.play-btn');
+    const progressBar = card.querySelector('.progress-bar');
+
+    playBtn.addEventListener('click', () => {
+      if (video.paused) {
+        document.querySelectorAll('video').forEach(v => v.pause()); // pause other videos
+        video.play();
+        playBtn.style.display = 'none';
+      } else {
+        video.pause();
+        playBtn.style.display = 'block';
+      }
+    });
+
+    video.addEventListener('timeupdate', () => {
+      const percent = (video.currentTime / video.duration) * 100;
+      progressBar.style.width = `${percent}%`;
+    });
+
+    video.addEventListener('ended', () => {
+      playBtn.style.display = 'block';
+      progressBar.style.width = '0%';
+    });
+  });
+</script>
+
+
+
+</body>
 </html>
